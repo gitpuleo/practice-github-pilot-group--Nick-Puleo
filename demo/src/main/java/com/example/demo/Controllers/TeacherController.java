@@ -27,7 +27,7 @@ public class TeacherController {
     }
 
     @PutMapping("/{id}")
-    public Teacher updateTeacher(@PathVariable Long id, @RequestBody Teacher teacher) {
+    public Teacher updateTeacher(@PathVariable int id, @RequestBody Teacher teacher) {
         teacher.setId(id);
         return teacherService.save(teacher);
     }

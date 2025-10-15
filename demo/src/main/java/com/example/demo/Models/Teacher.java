@@ -1,5 +1,4 @@
 package com.example.demo.Models;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,6 +12,10 @@ public class Teacher {
     private String name;
     private String subject;
 
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public Teacher(String name, String subject) {
         this.name = name;
         this.subject = subject;
